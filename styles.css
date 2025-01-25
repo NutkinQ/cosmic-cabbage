@@ -1,0 +1,160 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;  /* Classy serif font */
+}
+
+/* Body styling */
+body {
+    background-color: #f9f9f9;  /* Light background */
+    color: #333;  /* Dark text for contrast */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the container */
+    min-height: 100vh; /* Ensure full page height */
+}
+
+/* Centered content box */
+.container {
+    max-width: 620px;  /* Limit content width */
+    width: 100%;  /* Make it responsive */
+    background: #fff;  /* White background for contrast */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    text-align: left;  /* Align text to the left */
+}
+
+/* Header styles */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;  /* Dark blue-gray for contrast */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 10px;
+}
+.subtitle {
+    font-style: italic;
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #34495e;  
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 23px;
+    color: #2980b9;  
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;  
+    margin-bottom: 20px;
+}
+
+/* Styling for links */
+a {
+    text-decoration: none;
+    color: #2980b9;  
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #1a5276;  
+}
+
+/* Image styling */
+img {
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    max-width: 100%;  /* Responsive images */
+    height: auto;
+    display: block;  /* Remove extra space below image */
+    margin: 10px 0;
+}
+
+img:hover {
+    transform: scale(1.05);  
+}
+
+/* Footer styles */
+footer {
+    background: #2c3e50;  /* Dark blue-gray background */
+    color: #ecf0f1;       
+    text-align: center;  /* Center footer content */
+    padding: 20px 0;
+    width: 100%;
+    font-size: 16px;
+    margin-top: auto;  /* Push footer to bottom if needed */
+}
+
+/* Footer links styling */
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #1abc9c;  
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #16a085;  
+}
+
+/* Footer copyright text */
+.footer-text {
+    font-size: 14px;
+    opacity: 0.8;  
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;  /* Adjust box width */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 10px 0;
+    }
+}
